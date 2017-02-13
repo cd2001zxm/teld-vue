@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="teld.config.js"></script>
+    <script>
+        $.ajax({
+            url: window.FrameHost+"/index-template.html",
+            type: "get",
+            async:false,
+            cache: false
+        }).done(function (data,status,xhr) {
+            var newDoc=document.open("text/html","replace");
+            newDoc.write(data);
+            newDoc.close();
+        }).fail(function (xhr,status,excetion) {
+            alert("下载首页失败！请刷新重试！");
+        });
+    </script>
+</head>
+
+</html>
