@@ -11,7 +11,7 @@
             async:false,
             cache: false
         }).done(function (data,status,xhr) {
-            newDoc.close();
+            
            document.write(data)
         }).fail(function (xhr,status,excetion) {
             alert("下载首页失败！请刷新重试！");
