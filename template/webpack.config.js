@@ -81,7 +81,7 @@ module.exports = {
            // 'vue': 'vue/dist/vue.js',
             'vue':'vue/dist/vue.runtime.js',
             'vuex': 'vuex/dist/vuex.js',
-            'vue-router': path.resolve(__dirname, "teld-vue-frame/teld-vue/teld-vue-router"),//'vue-router': 'vue-router/dist/vue-router.js',
+            'vue-router': "teld-vue-frame/teld-vue/teld-vue-router",//'vue-router': 'vue-router/dist/vue-router.js',
             //'vue-resource': 'vue-resource/dist/vue-resource.js'
         }
     },

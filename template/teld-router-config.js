@@ -1,6 +1,6 @@
 
 
-const IndexPage = r => require.ensure([], () => r(require('../vue/frame/Index.vue')), 'Index')
+const IndexPage = r => require.ensure([], () => r(require('./src/vue/frame/Index.vue')), 'Index')
 
 
 export const Routes = [
