@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const webpack = require('webpack');
+const webpack = require('teld-webpack');
 const EventEmitter = require('events');
 
 const TeldModuleIDWebpackPlugin = require('teld-vue-frame/webpack-plugin/teld-moduleid-webpack-plugin');
