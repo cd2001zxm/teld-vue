@@ -2,8 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const webpack = require('webpack');
 const EventEmitter = require('events');
-const WebpackSplitHash = require('teld-vue-frame/lib/webpack-split-hash');
-const TeldHtmlWebpackPlugin = require('teld-vue-frame/lib/teld-html-webpack-plugin');
+
+const TeldModuleIDWebpackPlugin = require('teld-vue-frame/webpack-plugin/teld-moduleid-webpack-plugin');
+const TeldChunkIDWebpackPlugin = require('teld-vue-frame/webpack-plugin/teld-chunkid-webpack-plugin');
+const TeldMoveFileWebpackPlugin = require('teld-vue-frame/webpack-plugin/teld-move-file-webpack-plugin');
 
 
 //解决最大监听问题
@@ -15,13 +17,17 @@ const ROOT_PATH = path.resolve(__dirname);
 
 //编译前的准备工作
 fs.writeFileSync(path.join(ROOT_PATH, 'src/js/frame.js'), fs.readFileSync(path.join(ROOT_PATH, '/node_modules/teld-vue-frame/src/frame.js')));
+//fs.writeFileSync(path.join(ROOT_PATH, 'index.html'), fs.readFileSync(path.join(ROOT_PATH, '/node_modules/teld-vue-frame/index.html')));
 (function(fileUrl){
     var files = fs.readdirSync(fileUrl);//读取该文件夹
     files.forEach(function(file){
         fs.unlinkSync(fileUrl+'/'+file);
     });
-    fs.rmdirSync(fileUrl);
 })(path.join(ROOT_PATH, 'dist/js'));
+
+//当前时间
+const now = new Date().getMilliseconds();
+
 
 // webpack.config.js
 module.exports = {
@@ -34,12 +40,17 @@ module.exports = {
         publicPath: "dist/js/",
         path: path.join(__dirname, 'dist/js'),
         filename: '[name].js',
-        chunkFilename: '[name].[chunkhash:5].js'
-        //chunkFilename:'[name].js'
+        //chunkFilename: '[name].[chunkhash:5].js',
+        version: now,
+        chunkFilename:'[name].js'
     },
     devtool: "cheap-eval-source-map",
     module: {
         loaders: [
+            {
+                test: /\.css$/,
+                loader: 'css-loader'
+            },
             {
                 // use vue-loader for *.vue files
                 test: /\.vue$/,
@@ -51,30 +62,27 @@ module.exports = {
                 loader: 'babel-loader',
                 // important: exclude files in node_modules
                 // otherwise it's going to be really slow!
-                exclude: /node_modules/
-            },
-            {
-                test: /\.png$/,
-                loader: "url-loader",
-                query: {mimetype: "image/png"}
-            },
-            {
-                test: /\.less$/,
-                loader: 'style!css!less'
+                exclude: [/node_modules/,path.resolve(__dirname, "src/js/teld-vue")]
             },
             // {
-            //   test: /\.ejs$/,
-            //   loader: 'ejs-html'
+            //     test: /\.(png|jpg)$/,
+            //     loader: "url-loader"
+            //     //query: {mimetype: "image/png"}
             // }
+            {
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+                loader: 'file'
+            }
 
         ]
     },
     resolve: {
         alias: {
-            'vue': 'vue/dist/vue.js',
+           // 'vue': 'vue/dist/vue.js',
+            'vue':'vue/dist/vue.runtime.js',
             'vuex': 'vuex/dist/vuex.js',
-            'vue-router': 'vue-router/dist/vue-router.js',
-            'vue-resource': 'vue-resource/dist/vue-resource.js'
+            'vue-router': path.resolve(__dirname, "teld-vue-frame/teld-vue/teld-vue-router"),//'vue-router': 'vue-router/dist/vue-router.js',
+            //'vue-resource': 'vue-resource/dist/vue-resource.js'
         }
     },
     // if you are using babel-loader directly then
@@ -86,15 +94,22 @@ module.exports = {
     ,
 
     plugins: [
-        new WebpackSplitHash(),
-        new webpack.optimize.CommonsChunkPlugin('shared.js'),
+        new TeldMoveFileWebpackPlugin(),
+        new TeldModuleIDWebpackPlugin(),
+        new TeldChunkIDWebpackPlugin(),
+        //new WebpackSplitHash(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "shared",
+            minChunks: 2
+        }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
         })
-        // ,new webpack.optimize.UglifyJsPlugin({
-        //       compress: {
-        //           warnings: false
-        //       }
-        //   })
+     ,new webpack.optimize.UglifyJsPlugin({
+           compress: {
+               warnings: false
+           },
+           sourceMap: true
+       })
     ]
 }

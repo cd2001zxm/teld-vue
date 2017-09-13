@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="referrer" content="never"/>
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="teld.config.js"></script>
     <script>
@@ -9,10 +10,13 @@
             url: window.FrameHost+"/index-template.html",
             type: "get",
             async:false,
-            cache: false
+            cache: false,
+            xhrFields: { withCredentials: true }
         }).done(function (data,status,xhr) {
-            
-           document.write(data)
+            //var newDoc=document.open("text/html","replace");
+            //newDoc.write(data);
+            //newDoc.close();
+            document.write(data)
         }).fail(function (xhr,status,excetion) {
             alert("下载首页失败！请刷新重试！");
         });
