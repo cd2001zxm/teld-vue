@@ -1,0 +1,3 @@
+/*! builded Tue Jan 08 2019 13:46:46 */
+
+if(window.versionUpdated=!1,window.Worker){var versionWorker=new Worker("/plugin/teld-version-work.js");versionWorker.onmessage=function(a){"versionUpdate"==a.data&&0==window.versionUpdated&&(window.localStorage.setItem(window.versionKey,Date.now()),window.versionUpdated=!0,bootbox.setDefaults("locale","zh_CN"),bootbox.confirm(window.localeMessage.localeMsg.VersionConfirm,function(a){a?window.location.reload(!0):window.versionUpdated=!1}))},window.p_context.isPlatformIndex||setInterval(function(){console.log("------\u5f00\u59cb\u68c0\u67e5\u7248\u672c\u4fe1\u606f-------");var a={};sgParamSetting(a,null,!1),versionWorker.postMessage([p_context.SubApplication,window.PluginVersion,window.FrameSGHost,$.param(a)])},36e5)}

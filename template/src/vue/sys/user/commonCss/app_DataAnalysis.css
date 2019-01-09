@@ -1,0 +1,683 @@
+﻿
+.col_lg_padding {
+    padding-left: 15px;
+}
+
+.styl_height {
+    height: 100px;
+    border: 1px solid #d2d2d2;
+}
+
+.style_height {
+    height: 240px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+}
+.style_Twoheight {
+    height: 400px;
+    border: 1px solid #d2d2d2;
+    background-color: #fff;
+}
+
+.lbl_width {
+    width: 57%;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    background-color: #FFF;
+}
+
+.col_12_manager {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.style_bottom {
+    margin-bottom: 10px;
+}
+
+.icon_row {
+    width: 100%;
+    height: 80px;
+    padding-left: 10%;
+    line-height: 80px;
+}
+
+.icon_text {
+    display: inline;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 5px;
+    /*float: left;*/
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline;
+}
+
+/*重写颜色*/
+.lbl_mileages {
+    background-color: #fff;
+}
+
+.lbl_mileage {
+    background-color: #00b09a;
+}
+
+.lbl_carbon {
+    background-color: #f1ae45;
+}
+
+.lbl_electricstake {
+    background-color: #6293f0;
+}
+
+.lbl_saveoil {
+    background-color: #2c883e;
+}
+
+.lbl_useelectric {
+    background-color: #dc524c;
+}
+
+.lbl_carcharge {
+    background-color: #7d4ecc;
+}
+/*终端目标数*/
+.lbl_Strategy {
+    background-color: #3e8acc;
+}
+/*在建及运营终端数*/
+.lbl_BuildPile {
+    background-color: #51c0e2;
+}
+/*运营终端数*/
+.lbl_OperatePile {
+    background-color: #8c5311;
+}
+
+.lbl_hei_left {
+    height: 100%;
+    width: 43%;
+    float: left;
+}
+
+.icon_row {
+    width: 100%;
+    height: 80px;
+    padding-left: 7%;
+    line-height: 80px;
+}
+
+.icon_lbl {
+    margin-top: 21px;
+    height: 36px;
+    width: 36px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lbl_hei_mindel {
+    height: 100%;
+    width: 44%;
+    float: left;
+    display: inline-block;
+    background-color: #FFF;
+}
+
+.mindtext {
+    font-weight: bold;
+    font-size: 25px;
+    color: #1c293a;
+    text-align: right;
+}
+
+.lbl_hei_right {
+    height: 100%;
+    width: 13%;
+    margin: 0px;
+    float: left;
+    background-color: #FFF;
+}
+
+.font_size {
+    font-weight: bold;
+    font-size: 16px;
+    color: #767676;
+    text-align: center;
+}
+
+.righttext {
+    height: 80px;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #767676;
+    text-align: center;
+}
+/*图标*/
+/*充电总度数*/
+/*.icon_mileage {*/
+    /*background-image: url(/Content/images/DataAnalysis/chargeDegrees.png);*/
+/*}*/
+/*!*充值总金额*!*/
+/*.icon_carbon {*/
+    /*background-image: url(/Content/images/DataAnalysis/rechargeMoney.png);*/
+/*}*/
+/*!*平均服务费*!*/
+/*.icon_electricstake {*/
+    /*background-image: url(/Content/images/DataAnalysis/avgservecost.png);*/
+/*}*/
+/*!*充电总次数*!*/
+/*.icon_saveoil {*/
+    /*background-image: url(/Content/images/DataAnalysis/chargingNumberCount.png);*/
+/*}*/
+/*!*消费总金额*!*/
+/*.icon_useelectric {*/
+    /*background-image: url(/Content/images/DataAnalysis/consumeMoney.png);*/
+/*}*/
+/*!*APP活跃用户*!*/
+/*.icon_carcharge {*/
+    /*background-image: url(/Content/images/DataAnalysis/appBrisk.png);*/
+/*}*/
+/*!*终端目标数*!*/
+/*.ico_Strategy {*/
+    /*background-image: url(/Content/images/DataAnalysis/Strategy.png);*/
+/*}*/
+/*!*运营及在建终端数*!*/
+/*.ico_BuildPile {*/
+    /*background-image: url(/Content/images/DataAnalysis/BuildPile.png);*/
+/*}*/
+/*!*运营终端数*!*/
+/*.ico_OperatePile {*/
+    /*background-image: url(/Content/images/DataAnalysis/OperatePile.png);*/
+/*}*/
+
+/*.ico_1_1 {*/
+    /*background-image: url(/Content/images/DataAnalysis/1_1.png);*/
+/*}*/
+
+/*.ico_1_2 {*/
+    /*background-image: url(/Content/images/DataAnalysis/1_2.png);*/
+/*}*/
+
+/*.ico_2_1 {*/
+    /*background-image: url(/Content/images/DataAnalysis/2_1.png);*/
+/*}*/
+
+/*.ico_2_2 {*/
+    /*background-image: url(/Content/images/DataAnalysis/2_2.png);*/
+/*}*/
+
+/*.ico_3_1 {*/
+    /*background-image: url(/Content/images/DataAnalysis/3_1.png);*/
+/*}*/
+
+/*.ico_3_2 {*/
+    /*background-image: url(/Content/images/DataAnalysis/3_2.png);*/
+/*}*/
+
+/*.ico_4_1 {*/
+    /*background-image: url(/Content/images/DataAnalysis/4_1.png);*/
+/*}*/
+
+/*.ico_4_2 {*/
+    /*background-image: url(/Content/images/DataAnalysis/4_2.png);*/
+/*}*/
+
+
+@media screen and (min-width: 1920px) {
+    .icon_row {
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .icon_text {
+        font-size: 18px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .icon_text {
+        font-size: 14px;
+    }
+
+    .lbl_hei_left {
+        width: 40%;
+    }
+
+    .icon_row {
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .icon_lbl {
+        margin-top: 29px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .lbl_hei_mindel {
+        width: 40%;
+    }
+
+    .mindtext {
+        font-size: 34px;
+    }
+
+    .lbl_hei_right {
+        width: 20%;
+    }
+    .lbl_width {
+        width: 60%;
+    }
+    .font_size {
+    font-size: 24px;
+    }
+    .righttext {
+        height: 100px;
+        line-height: 100px;
+        font-size: 24px;
+    }
+}
+
+/* 屏幕小于979 px 平版 手机端样式 */
+@media only screen and (max-width: 979px) {
+    .lbl_hei_left {
+        width: 48%;
+    }
+
+    .icon_lbl {
+        margin-top: 24px;
+        height: 32px;
+        width: 32px;
+    }
+
+    .lbl_hei_mindel {
+        width: 40%;
+    }
+
+    .lbl_width {
+        width: 52%;
+    }
+
+    .mindtext {
+        font-size: 18px;
+    }
+
+    .lbl_hei_right {
+        width: 12%;
+    }
+
+    .righttext {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .lbl_hei_left {
+        width: 55%;
+    }
+
+    .lbl_hei_mindel {
+        width: 33%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1199px) {
+    .sy_padding_right {
+        padding-right: 0;
+    }
+}
+
+@media (min-width:1200px) {
+    .style_padding_right {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .sty_margin_bottom {
+        margin-bottom: 15px;
+    }
+
+    .col_12_manager {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+/*不同分辨率显示的图表格高度*/
+@media (min-width:1367px) and (max-width:1600px) {
+    .style_height {
+        height: 225px;
+    }
+    .style_Twoheight {
+        height: 400px;
+    }
+    .icon_text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1601px) and (max-width:1920px) {
+    .style_height {
+        height: 300px;
+    }
+     .style_Twoheight {
+        height: 575px;
+    }
+    .icon_text {
+        font-size: 19px;
+    }
+}
+
+@media (min-width:1921px) {
+    .style_height {
+        height: 300px;
+    }
+    .style_Twoheight {
+        height: 575px;
+    }
+    .icon_text {
+        font-size: 19px;
+    }
+}
+/*趋势分析*/
+@media (min-width:979px) and (max-width:1199px) {
+    .sty_margin_bottom {
+        margin-bottom: 15px;
+    }
+}
+
+/*新添加的樣式，單位為2個字的時候使用新的樣式 張靜 2016-1-23*/
+ .lbl_hei_left_dw {
+            height: 100%;
+            width: 43%;
+            float: left;
+        }
+.lbl_hei_mindel_dw {
+            height: 100%;
+            width: 40%;
+            float: left;
+            display: inline-block;
+            background-color: #FFF;
+        }
+.lbl_hei_right_dw {
+            height: 100%;
+            width: 17%;
+            margin: 0px;
+            float: left;
+            background-color: #FFF;
+        }
+@media screen and (min-width: 1920px) {
+    .lbl_hei_left_dw {
+        width: 40%;
+    }
+    .lbl_hei_mindel_dw {
+        width: 36%;
+    }
+    .lbl_hei_right_dw {
+        width: 24%;
+    }
+}
+/* 屏幕小于979 px 平版 手机端样式 */
+@media only screen and (max-width: 979px) {
+    .lbl_hei_left {
+        width: 48%;
+    }
+    .lbl_hei_mindel {
+        width: 36%;
+    }
+    .lbl_hei_right {
+        width: 16%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .lbl_hei_left {
+        width: 54%;
+    }
+
+    .lbl_hei_mindel {
+        width: 30%;
+    }
+}
+
+
+/*标签翻转样式*/
+div.flip-3d {
+    perspective: 1200px;
+    /*width: 30%;*/
+    float: left;
+}
+
+div.flip-3d figure {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s transform;
+    font-size: 1.6rem;
+}
+
+div.flip-3d figure figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: rotateY(.5turn) translateZ(1px);
+    background: rgba(255,255,255,0.9);
+    text-align: left;
+    padding: 5px;
+    opacity: 0;
+    transition: 1s .5s opacity;
+    color: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+ /*分辨率1920*1080*/
+@media only screen and  (min-width:1920px) {
+    div.flip-3d figure figcaption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: rotateY(.5turn) translateZ(1px);
+        background: rgba(255,255,255,0.9);
+        text-align: left;
+        padding: 5px;
+        opacity: 0;
+        transition: 1s .5s opacity;
+        color: #ffffff;
+        height: 100px;
+        width: 100%;
+    }
+}
+
+.hover {
+    transform: rotateY(.5turn);
+    opacity: 1;
+}
+
+.figcaption_text {
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: left;
+    margin-top: 3%;
+}
+
+
+
+/*分辨率1920*1080*/
+@media only screen and (min-width:1920px) {
+    .figcaption_text {
+        font-size: 14px;
+        padding-left: 5px;
+        text-align: left;
+        margin-top: 3%;
+    }
+}
+
+
+
+
+
+/*公交集团运营分析   服务大巴数   桩均大巴数  翻转样式单独处理*/
+.PubTransfigcaption_text {
+    font-size: 14px;
+    text-align: center;
+    margin-top:5%;
+}
+
+/*分辨率2560*1440*/
+@media only screen and (min-width:2560px) {
+    .PubTransfigcaption_text {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 4%;
+    }
+}
+
+.PubTranspersonTotal_text {
+     font-size: 14px;
+    padding-left: 5px;
+    text-align: left;
+    margin-top: 3%;
+}
+
+/*分辨率1920px*/
+@media only screen and (min-width:1920px) {
+    .PubTranspersonTotal_text {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+/*终端总数单独处理*/
+.pileTotalcount_text {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 1%;
+}
+
+
+/*终端总数单独处理1366px*/
+@media only screen and (min-width:1366px) {
+    .pileTotalcount_text {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 1%;
+    }
+}
+
+/*终端总数单独处理1366px*/
+@media only screen and (min-width:1920px) {
+    .pileTotalcount_text {
+        font-size: 14px;
+        text-align: left;
+        padding-left:5px;
+        margin-top: 3%;
+    }
+}
+
+
+
+
+/*公式样式处理*/
+.divContainer {
+    margin:15px;
+    margin-top:10px;
+}
+.hr_context {
+    width: 55%;
+    margin-top:  3%;
+    margin-left: 5px;
+    float: left;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.divFenMu {
+    width: 60%;
+    font-size: 12px;
+    line-height: 0px;
+    margin-left: 10%;
+}
+.divFenZi {
+    text-align: center;
+    font-size: 12px;
+}
+.Equal_text {
+    font-size: 12px;
+}
+.first_text {
+    float: left;
+    font-size: 12px;
+}
+@media only screen and (min-width:1920px) {
+    .divContainer {
+        margin: 15px;
+    }
+    .hr_context {
+        width: 66%;
+        margin-top: 2.2%;
+        margin-left: 5px;
+        float: left;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .divFenMu {
+        width: 50%;
+        font-size: 14px;
+        line-height:0px;
+    }
+
+    .divFenZi {
+        text-align: center;
+        font-size: 14px;
+    }
+    .Equal_text {
+        font-size:14px;
+        float:left;
+    }
+    .first_text {
+        float: left;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    .divContainer {
+        margin: 15px;
+    }
+    .hr_context {
+        width: 77%;
+        margin-top: 1.5%;
+        margin-left: 5px;
+        float: left;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .divFenMu {
+        width: 50%;
+        font-size: 14px;
+        line-height:0px;
+    }
+
+    .divFenZi {
+        text-align: center;
+        font-size: 14px;
+    }
+    .Equal_text {
+        font-size:14px;
+    }
+    .first_text {
+        float: left;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,1 @@
+﻿localeMessage.cp={"M12EAFF6A-F6BE-4F92-B98E-EC0DC8D1B7AF":"Topology monitoring","APP0acd2d0a-56fc-41f2-9a23-6ea8712825f6":"Application topology monitoring","M84E30D61-4AA2-4AA5-BCE4-A05858370E1D":"Application of topology monitoring system"}

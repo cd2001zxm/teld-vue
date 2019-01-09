@@ -1,0 +1,13 @@
+﻿/*支付成功的文字标识*/
+.paided {
+    color: #43B400;
+}
+/*未支付的文字标识*/
+.notpaid {
+    color: #FF3333;
+}
+/*主动定义下拉帮助框右侧的下拉箭头位置（让其靠右显示）*/
+.caret {
+    margin: 8px auto;
+    float: right;
+}

@@ -1,0 +1,1 @@
+﻿localeMessage.test={"M002FCDF3-4443-4EA3-B536-0C6D9DDC4DFA":"SYS synchronous TFS module test","M3F41CBEF-7CE4-45D3-907B-1128CEFD0CEA":"SYS synchronous TFS new module test","APPDC367BE8-1D36-48EB-A65E-5853FC3E5E26":"SYS synchronous TFS","M3ADEFD5F-5360-4D85-B7FE-317D788707B5":"SYS synchronous TFS new function test"}

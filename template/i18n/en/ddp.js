@@ -1,0 +1,1 @@
+﻿localeMessage.ddp={"APP71F8D819-5120-44C1-8DAD-77CAF1A65FC5":"Development delivery platform","MGAA0F4A22-1233-4DA6-B391-AF71AC5CFC25":"Resource management","M39731310-FC8E-49FC-8038-43E4F13017AF":"Definition of deliverables","MGCC0F371E-DC0F-4574-A3E1-5BA08A7F04D5":"International management","MGF7F0D699-3AD1-4096-BF83-CB666E0932DD":"deliverables"}

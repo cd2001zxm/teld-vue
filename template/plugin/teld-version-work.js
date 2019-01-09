@@ -1,0 +1,3 @@
+/*! builded Tue Jan 08 2019 13:46:46 */
+
+onmessage=function(a){var b=a.data[0],c=a.data[1],d=a.data[2],e=a.data[3],f=null,g=function(){if(4===f.readyState&&200===f.status){var a=JSON.parse(f.responseText);if("1"==a.state){var b=a.data;if(b){for(var d in b){var e=b[d],g=e.FuncId,h=e.VerMask;if(0==c.hasOwnProperty(g)||c[g]!=h)return console.log("------\u53d1\u73b0\u65b0\u7248\u672c-------"),void postMessage("versionUpdate")}console.log("------\u672a\u53d1\u73b0\u65b0\u7248\u672c-------")}}}};f=new XMLHttpRequest,f.async=!0,f.onreadystatechange=g,f.open("POST",d+"WRPFrame-GetPluginVersion&applicationName="+b,!0),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),f.send(e)};
