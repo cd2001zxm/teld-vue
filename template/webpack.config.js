@@ -18,12 +18,12 @@ const ROOT_PATH = path.resolve(__dirname);
 //编译前的准备工作
 //fs.writeFileSync(path.join(ROOT_PATH, 'src/js/frame.js'), fs.readFileSync(path.join(ROOT_PATH, '/node_modules/teld-vue-frame/src/frame.js')));
 //fs.writeFileSync(path.join(ROOT_PATH, 'index.html'), fs.readFileSync(path.join(ROOT_PATH, '/node_modules/teld-vue-frame/index.html')));
-(function(fileUrl){
-    var files = fs.readdirSync(fileUrl);//读取该文件夹
-    files.forEach(function(file){
-        fs.unlinkSync(fileUrl+'/'+file);
-    });
-})(path.join(ROOT_PATH, 'dist/js'));
+// (function(fileUrl){
+//     var files = fs.readdirSync(fileUrl);//读取该文件夹
+//     files.forEach(function(file){
+//         fs.unlinkSync(fileUrl+'/'+file);
+//     });
+// })(path.join(ROOT_PATH, 'dist/js'));
 
 //当前时间
 const now = new Date().getMilliseconds();
