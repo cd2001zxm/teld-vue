@@ -7,14 +7,14 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from './teld-vue-router'
 //import vueResource from 'vue-resource'
-import FrameBody from 'teld-vue-frame/vue/FrameBody.vue'
+import FrameBody from '../vue/frame/FrameBody.vue'
 //import FrameBody from '../vue/frame/FrameBody.vue'
 import { Routes } from '../../teld-router-config'
 import VueI18n from './teld-vue-i18n'
 
 
 //全局配置
-Vue.config.devtools = false;
+Vue.config.devtools = true;
 Vue.config.errorHandler = function(err, vm) {
     // handle error
     console.error(err);

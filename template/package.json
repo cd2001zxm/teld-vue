@@ -4,7 +4,7 @@
   "author": "chendong",
   "private": true,
   "scripts": {
-    "dev": "node dev",
+    "dev1": "node dev",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "devDependencies": {
@@ -47,6 +47,7 @@
     "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
-    "teld-vue-frame": "^3.3.5"
+    "teld-vue-frame": "^3.3.5",
+    "teld-webpack": "0.0.1"
   }
 }

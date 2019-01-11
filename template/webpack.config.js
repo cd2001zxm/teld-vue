@@ -37,11 +37,11 @@ module.exports = {
     },
     // where to place the compiled bundle
     output: {
-        publicPath: "dist/js/",
-        path: path.join(__dirname, 'dist/js'),
+        publicPath: "plugin/newsys/",
+        path: path.join(__dirname, 'plugin/newsys/'),
         filename: '[name].js',
         //chunkFilename: '[name].[chunkhash:5].js',
-        version: now,
+        //version: now,
         chunkFilename:'[name].js'
     },
     devtool: "cheap-eval-source-map",
@@ -54,7 +54,7 @@ module.exports = {
             {
                 // use vue-loader for *.vue files
                 test: /\.vue$/,
-                loader: 'vue'
+                loader: 'vue-loader'
             },
             {
                 // use babel-loader for *.js files
@@ -71,7 +71,7 @@ module.exports = {
             // }
             {
                 test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-                loader: 'file'
+                loader: 'file-loader'
             }
 
         ]
@@ -94,10 +94,13 @@ module.exports = {
     ,
 
     plugins: [
-        new TeldMoveFileWebpackPlugin(),
+        //new TeldMoveFileWebpackPlugin(),
         new TeldModuleIDWebpackPlugin(),
         new TeldChunkIDWebpackPlugin(),
         //new WebpackSplitHash(),
+        // new NamedModulesPlugin(),
+        // new NamedChunksPlugin(),
+        //new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
             name: "shared",
             minChunks: 2

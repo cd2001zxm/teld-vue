@@ -106,8 +106,7 @@
                     var versionStr = window.versionKey && saved?"?version="+saved:""
 
                     var subApp = __webpack_require__.f?__webpack_require__.f:window.p_context.SubApplication
-                    //script.src = __webpack_require__.p + subApp +"/" + chunkId +  ".js" + versionStr;
-                    script.src = __webpack_require__.p + chunkId +  ".js" + versionStr;
+                    script.src = __webpack_require__.p + subApp +"/" + chunkId +  ".js" + versionStr;
                 }
             } else {
 
@@ -172,7 +171,7 @@
 
                     if(result.total == 0){
                         if(window.location.href.replace("http://","").replace("https://","").startsWith("web."))
-                            loadAndRusScript("plugin/"+p+"/teld-helper-list-17.js");
+                            loadAndRusScript("teld-helper-list-17.js");
                     }else{
                         try{
                             createHelperList(result)
@@ -199,7 +198,7 @@
     __webpack_require__.c = installedModules;
 
     // __webpack_public_path__
-    __webpack_require__.p = "dist/js/";
+    __webpack_require__.p = "plugin/";
 
     __webpack_require__.f = null;
 

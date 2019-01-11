@@ -234,6 +234,7 @@
 
 </style>
 <script>
+    import WRPCommon from '../../js/WRPCommon'
     export default{
         data:function () {
 
