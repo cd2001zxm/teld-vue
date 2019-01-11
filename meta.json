@@ -23,6 +23,6 @@
   "filters": {
     "**/*.vue": "true"
   },
-  "skipInterpolation": ["plugin/*.js","**/*.vue"],
+  "skipInterpolation": ["**/**/*.js","**/*.vue"],
   "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev"
 }
